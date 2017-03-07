@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <head>
 <title>Portfolio di Tommaso</title>
+<link rel="stylesheet" href="{{site.baseurl}}/css/master.css">
 </head>
 <body>
 
   <header>
     <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li><a href="{{site.baseurl}}/news.html">News</a></li>
-      </ul>
-    </nav>
+    {% include nav.html %}
   </header>
 
 {{content}}
-
+<footer>
+  <p>no copyright 2017 :)</p>
+  {% include nav.html %}
+</footer>
 </body>
 </html>

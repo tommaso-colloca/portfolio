@@ -1,19 +1,23 @@
 <!DOCTYPE html>
+
 <head>
-<title>Portfolio di Tommaso</title>
-<link rel="stylesheet" href="{{site.baseurl}}/css/master.css">
+    <title>Portfolio di Tommaso</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/master.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>My Portfolio</h1>
-    {% include nav.html %}
-  </header>
+    <header>
+        <h1>My Portfolio</h1> {% include nav.html navclass='nav-top' %}
+    </header>
 
-{{content}}
-<footer>
-  <p>no copyright 2017 :)</p>
-  {% include nav.html %}
-</footer>
+    {{content}}
+
+    
+    <footer>
+        <p>no copyright 2017 :)</p>
+        {% include nav.html navclass='nav-bottom' %}
+    </footer>
 </body>
+
 </html>

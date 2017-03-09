@@ -2,5 +2,14 @@
 layout: default
 ---
 
-<h1>Tommaso's portfolio</h1>
-<p>my portfolio</p>
+<h1>News</h1>
+
+
+<ul>
+  {% for news in site.categories.news%}
+    <li>
+        <a href="#">{{news.title}}</a>
+        <p>{{news.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>
